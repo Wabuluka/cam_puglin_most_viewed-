@@ -11,7 +11,7 @@ remove_action('wp_head', 'adjacent_posts_rel_link_wp_head');
 global $query;
 function tpw_save_post_views($query){
 
-    if($query-> is_main_query()){
+    if($query->is_main_query()){
         $postID = $query->queried_object->ID;
 
         $metakey = 'tpw_post_views';
